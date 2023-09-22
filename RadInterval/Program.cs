@@ -42,7 +42,7 @@ namespace RadInterval
                             double deltaT = clock.Elapsed.TotalMilliseconds;
                             Console.WriteLine(deltaT);
                             logfile.WriteLine(deltaT);
-                            
+                            logfile.Flush();
 
                             clock.Restart();
                         }
